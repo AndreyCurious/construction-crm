@@ -1,0 +1,25 @@
+.chip {
+  height: 27px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.chip[data-status="new"] {
+  color: #53606d;
+  background: #eef0f3;
+}
+.chip[data-status="in_progress"] {
+  color: #345e9f;
+  background: #eaf1fc;
+}
+.chip[data-status="in_review"] {
+  color: #8c620c;
+  background: #fff2da;
+}
+.chip[data-status="accepted"] {
+  color: #30714d;
+  background: #e6f2eb;
+}
+.chip[data-status="revision"] {
+  color: #ad4b35;
+  background: #fcebe7;
+}

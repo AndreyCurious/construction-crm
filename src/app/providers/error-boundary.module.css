@@ -1,0 +1,10 @@
+.container {
+  padding: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.message {
+  margin-bottom: 16px;
+}

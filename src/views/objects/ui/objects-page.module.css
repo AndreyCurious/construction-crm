@@ -1,0 +1,120 @@
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.statistic {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.statisticValue {
+  font-size: 30px;
+  font-weight: 650;
+  margin-top: 4px;
+}
+
+.heading {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.count {
+  height: 22px;
+}
+
+.objects {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.cardHeader {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  background-color: #eef4f1;
+  border-radius: 20px;
+  padding: 11.2px;
+  display: flex;
+  color: var(--color-primary);
+}
+
+.title {
+  overflow-wrap: anywhere;
+}
+
+.address {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 6.4px;
+  overflow-wrap: anywhere;
+}
+
+.addressIcon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #8c98a2;
+}
+
+.progress {
+  margin-top: auto;
+}
+
+.progressLabel {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.progressBar {
+  height: 4px;
+  border-radius: 40px;
+  background-color: #edf0f2;
+}
+
+.review {
+  margin-top: 20px;
+}
+
+@media (min-width: 900px) {
+  .statistics {
+    gap: 20px;
+  }
+  .statistic {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .objects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1536px) {
+  .objects {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

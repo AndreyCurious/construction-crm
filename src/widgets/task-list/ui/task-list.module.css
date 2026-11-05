@@ -1,0 +1,57 @@
+.container {
+  overflow: hidden;
+}
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+.count {
+  align-self: center;
+  white-space: nowrap;
+}
+.table {
+  min-width: 650px;
+}
+.table[data-show-object="true"] {
+  min-width: 850px;
+}
+.titleCell {
+  min-width: 250px;
+  max-width: 400px;
+}
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.linkIcon {
+  flex-shrink: 0;
+  color: #9aa5ae;
+}
+.assignee {
+  white-space: nowrap;
+}
+.date {
+  white-space: nowrap;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+@media (min-width: 600px) {
+  .filters {
+    flex-direction: row;
+  }
+  .search {
+    max-width: 340px;
+  }
+  .status {
+    width: 210px;
+  }
+  .count {
+    margin-left: auto;
+  }
+}

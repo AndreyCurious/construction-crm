@@ -1,0 +1,24 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  padding: 64px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px;
+  text-align: center;
+  align-items: center;
+}
+
+.description {
+  max-width: 430px;
+}
+
+@media (min-width: 900px) {
+  .empty {
+    padding: 56px;
+  }
+}

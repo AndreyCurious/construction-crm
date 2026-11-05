@@ -1,0 +1,28 @@
+.header {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.content {
+  min-width: 0;
+}
+
+.title {
+  overflow-wrap: anywhere;
+}
+
+.description {
+  margin-top: 8px;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 600px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
